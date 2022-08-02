@@ -9,5 +9,5 @@
 #include <iostream>
 
 /*
-* @brief: 组合模式, 也叫部分整理模式, 
+* @brief: 组合模式, 也叫部分整理模式,
 */

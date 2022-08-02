@@ -9,35 +9,11 @@
 #include <iostream>
 #include <memory>
 
+#include "Shape.h"
+
 /*
 * @brief: 装饰器模式, 为一个现有的对象添加新的功能，又不改变其结构。实现方式就是把被装饰类的对象放到装饰类里面。
 */
-
-class Shape
-{
-public:
-    void virtual Draw() = 0;
-};
-
-class Circle: public Shape
-{
-public:
-    void Draw() override
-    {
-        std::cout<<"this is a Circle!"<<std::endl;
-    }
-
-};
-
-class Rectangle: public Shape
-{
-public:
-    void Draw() override
-    {
-        std::cout<<"this is a rectangle!"<<std::endl;
-    }
-
-};
 
 class ShapeDecorator: public Shape
 {
@@ -59,6 +35,8 @@ private:
 
 void TestDecoratorPattern()
 {
+    std::cout<<__FUNCTION__<<" start"<<std::endl;
     ShapeDecorator oShapeDecorator(std::make_shared<Circle>());
     oShapeDecorator.Draw();
+    std::cout<<__FUNCTION__<<" end"<<std::endl;
 }

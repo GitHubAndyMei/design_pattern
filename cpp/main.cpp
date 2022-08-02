@@ -1,10 +1,13 @@
 #include <iostream>
 
 #include "DecoratorPattern.h"
+#include "FacadePattern.h"
+#include "AdapterPattern.h"
 
 int main()
 {
 	TestDecoratorPattern();
-	std::cout<<"start "<<__FUNCTION__<<std::endl;
+	TestFacadePattern();
+	TestAdapterPattern();
 	return 0;
 }
