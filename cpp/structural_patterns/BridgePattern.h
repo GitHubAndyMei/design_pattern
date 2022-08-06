@@ -15,7 +15,7 @@ namespace BRIDGE_PATTERN
 {
 
 /*
-* @brief: 抽象与实现分离，独立扩展，讲抽象作为连接抽象与分享的桥，这里的抽象指的是需要抽象的对象，实现指具体的功能实现。
+* @brief: 抽象与实现分离，是两者可以独立变化，讲抽象作为连接抽象与分享的桥，这里的抽象指的是需要抽象的对象，实现指具体的功能实现。
 * @使用场景: 1.对象有多维度的变化
 */
 
@@ -130,6 +130,6 @@ void TestBridgePattern()
     std::shared_ptr<ColorInf> spColor = std::make_shared<RedColor>();
     TShirt oTShirt(spSize, spColor);
     oTShirt.PrintImage();
-    
+
     std::cout<<__FUNCTION__<<" end"<<std::endl;
 }
