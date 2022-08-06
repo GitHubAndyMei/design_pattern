@@ -36,7 +36,7 @@ public:
         
         auto spCircle = std::make_shared<Circle>();
         _colorSpCircleMap[color] = spCircle;
-        return spCircle;
+        return _colorSpCircleMap[color];
     }
 
 public:

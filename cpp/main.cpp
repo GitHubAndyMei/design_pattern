@@ -4,6 +4,7 @@
 #include "FacadePattern.h"
 #include "AdapterPattern.h"
 #include "FlyweightPattern.h"
+#include "BridgePattern.h"
 
 int main()
 {
@@ -11,5 +12,6 @@ int main()
 	TestFacadePattern();
 	TestAdapterPattern();
 	TestFlyWeightPattern();
+	TestBridgePattern();
 	return 0;
 }
