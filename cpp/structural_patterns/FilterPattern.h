@@ -16,6 +16,7 @@ namespace FILTER_PATTERN
 
 /*
 * @brief: 过滤器模式, 通过不同的的标准(过滤器)过滤一组对象
+* @demo:  从一群人中筛选出年龄大于等于18岁的
 */
 
 
