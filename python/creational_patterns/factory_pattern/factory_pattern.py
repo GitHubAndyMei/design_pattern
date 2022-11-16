@@ -10,9 +10,11 @@
 """
 具体实现
 1.通过dict的方式实现
+2.通过类的方式实现
 """
 
 
+# 1.通过dict的方式实现
 class Lion:
     pass
 
@@ -27,3 +29,9 @@ animal = {
 }
 
 lion = animal.get("lion")
+
+
+# 通过类的方式实现
+class Animal:
+    def get_animal(self, name):
+        return eval(name)()
